@@ -759,7 +759,6 @@ int main(void)
 
 #ifdef CONFIG_NRF_BOOT_SERIAL_BOOT_REQ
     if (boot_request_detect_recovery()) {
-        boot_request_clear();
         BOOT_LOG_DBG("Staying in serial recovery");
         boot_serial_enter();
     }
